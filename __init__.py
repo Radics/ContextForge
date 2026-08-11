@@ -6,4 +6,4 @@ Provides:
 """
 
 from .context_forge import Journal, add_fact
-from .rate_limiter import AdaptiveRateLimiter
+from .scripts.rate_limiter import AdaptiveRateLimiter

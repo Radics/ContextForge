@@ -64,4 +64,3 @@ if __name__ == '__main__':
     _, p, k, v = sys.argv
     add_fact(p, k, v)
     print('Added fact', k, '=', v)
-"""

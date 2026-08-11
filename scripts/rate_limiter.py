@@ -33,7 +33,10 @@ interval can be reduced (but never below the configured minimum).
 import os
 import time
 from pathlib import Path
-import yaml
+try:
+    import yaml
+except ImportError:
+    yaml = None
 
 DEFAULT_DELAY_MS = 300  # baseline pause between calls
 CONFIG_PATH = Path(__file__).parent.parent / "config.yaml"
